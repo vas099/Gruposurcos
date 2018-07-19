@@ -19,6 +19,60 @@ body {
     min-width: 981px;
     height: 83px;
 }
+.logButton {
+    background-color: #5271b7;
+    border-radius:2px;
+    border:1px solid #434e71;
+    cursor:pointer;
+    display:inline-block;
+    font-size:12px;
+    -webkit-font-smoothing:antialiased;
+    font-weight:bold;
+    line-height:18px;
+    padding:2px 6px;
+    text-align:center;
+    text-decoration:none;
+    text-shadow:none;
+    vertical-align:top;
+    white-space:nowrap;
+    margin-left:4px;
+    margin-top: 3px;
+    color: #fff;
+}
+.logButton:active {
+    background-color:#f6f7f9;
+    border:1px solid #000000;
+    background-color:#dddfe2;
+    border-color:#394053;
+    color: #fff;
+}
+.logButton:hover {
+    background-color: #48639e;
+    text-decoration:none;
+    border:1px solid #394053;
+    color: #fff;
+}
+.logButton .img {
+    margin-top:3px;
+    overflow:hidden;
+    vertical-align:top;
+    color: #fff;
+}
+.logButton input {
+    background:none;
+    border:1px;
+    border-color: #000000;
+    color:#4b4f56;
+    cursor:pointer;
+    display:inline-block;
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:12px;font-weight:bold;
+    line-height:18px;
+    margin:0;
+    padding:0;
+    white-space:nowrap;
+    color: #fff;
+}
 #globalContaine {
     margin: 0 auto;
     position: relative;
