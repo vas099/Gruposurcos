@@ -1,0 +1,172 @@
+/*#slider {
+	width: 384px;
+	height: 128px;
+	border:5px solid black;
+	margin: 50px auto;
+	overflow: hidden;
+}
+
+#polosa {
+	/*background-color: pink;
+	width: 896px;
+	position: relative;
+	left: 0;
+	transition: all ease 1s;
+}
+#polosa img {
+	float: left; 
+}
+#polosa::after {
+	content: "";
+	display: block;
+	clear: both;
+}*/
+
+/*#test {
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	margin: 30px;
+}
+
+#out {
+	width: 300px;
+	height: 150px;
+	margin: 20px;
+}*/
+
+/*#portret {
+	width: 600px;
+	height: 421px;
+	border: 3px solid black;
+	position: relative;
+	overflow: hidden;
+}
+#one, #two {
+	width: 600px;
+	height: 421px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	/*transition: all ease 500ms;
+}
+/*#one {
+	background-color: yellow;
+}
+#two {
+	background-color: blue;
+}
+
+#test {
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+}*/
+
+/*
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#menu {
+	width: 250px;
+	height: 100vh;
+	background: #343a88;
+	position: fixed;
+	left: -230px;
+	top: 0;
+	transition: all ease 1s;
+}*/
+
+/*
+.tabs {
+	width: 600px;
+	margin: 50px auto; 
+	font-family: sans-serif;
+}
+.tab-h {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid black;
+	text-align: center;
+	cursor: pointer;
+}
+.tabs-b {
+	display: none;
+	padding: 20px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+.tabs-body {
+	position: relative;
+	top: -1px;
+	z-index: 1;
+}
+.tabs-header {
+	position: relative;
+	z-index: 2;
+}
+.active {
+	border-bottom: 1px solid white;
+}
+*/
+/*
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.left, .right {
+	float: left;
+	width: 20%;
+	padding: 20px; 
+}
+.left {
+	background-color: coral;
+}
+.right {
+	background-color: orange;
+}*/
+
+* {
+	margin: 2px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
