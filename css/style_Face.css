@@ -573,9 +573,22 @@ a:hover {
     text-align: center;
     display:inline;
 }
-
-
-
+.contentinfo1 {
+    width: 980px;
+    height: 19px;
+}
+.mvl {
+    width: 980px;
+    height: 14px;
+    font-size: 11px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    color: #737373;
+    padding-left: 5px;
+}
+.image:hover {
+    background: linear-gradient( #96d17f, #578843);
 
 
 
