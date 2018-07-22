@@ -1,0 +1,66 @@
+.text_1_2_3 {
+    display: none !important;
+    height: 0;
+    position: absolute;
+    z-index: 202;
+    outline: none;
+}
+.failed {
+    position: absolute;
+}
+.failedIl{
+    padding-top: 18px;
+}
+.failedIm{
+    padding-right: 18px;
+}
+.failedIlIj {
+    background-color: #be4b49;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(139, 3, 0, .75), 0 1px 10px rgba(0, 0, 0, .35);
+    color: #fff;
+    font-size: 13px;
+    max-width: 300px;
+    padding: 13px;
+    background: #fff;
+    position: relative;
+}
+.ioIo {
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/-07kbDowl2T.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -12px -180px;
+    height: 22px;
+    right: 7px;
+    width: 11px;
+    overflow: hidden;
+    position: absolute;
+    font-style: italic;
+}
+.accessibleElem {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+a {
+    color: #365899;
+    cursor: pointer;
+    text-decoration: none;
+}
+element.style {
+    width: 941px;
+    right: 760px;
+    top: 115px;
+    opacity: 1;
+}
+
+
+
+
+
+
