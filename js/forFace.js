@@ -27,3 +27,4 @@ function validateEmail(str) {
       var 
       return reg.test(str);
 }
+/Applications/MAMP/htdocs

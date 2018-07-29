@@ -1,0 +1,39 @@
+.footerGlobal {
+    height: 1324px;
+    margin: 0 auto;
+    zoom: 1;
+    display: block;
+    margin:auto;
+}
+.servicesContainer {
+    height: 800px;
+    position: inherit;
+    margin:0;
+}
+.footer {
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/footer.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
