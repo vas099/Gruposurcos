@@ -7,7 +7,7 @@ body {
     line-height: 1.34;
     margin: 0;
     padding: 0;
-    display: block;
+    display: none;
 } 
 #global {
     height: 2580px;
@@ -17,14 +17,17 @@ body {
     position: relative;
 }
 #header { 
-    height: 95px;
+    height: 70px;
     width: 100%; 
     display: block;
     position: fixed;
     z-index: 1000;
 }
+#header.sticky {
+    background-color: #41628ff9;
+}
 #dd1 {
-    height: 535px;
+    height: 760px;
     width: 100%;
     background-image: url(../images/villa.jpg);
     position: fixed;
@@ -33,21 +36,20 @@ body {
     z-index: 0;
     overflow: hidden;
     display: block;
-    top: 50px;
     background-position: 50% 50%;
 }
 .dd1Text {
-    height: 455px;
+    height: 690px;
     width: 1000px;
     position: relative;
-    top: 130px;
+    top: 70px;
     margin: 0 auto;
 }
 #dd2 {
     height: 965px;
     position: relative;
-    background-color: #ececec;
-    margin-top: 130px;
+    background-color: #dde5f0;
+    margin-top: 70px;
 }
 .dd2Form {
     height: 400px;
@@ -85,154 +87,172 @@ body {
     background-position: 50% 50%;
 }
 .menuBar {
-    height: 50px;
+    height: 70px;
     width: 100%;
     margin: 0;
     position: relative;
     outline: 0;
-    background-color: #ececec;
     vertical-align: top;
 }
 .nav {
     width: 100%;
-    height: 45px;
-    background: linear-gradient(to left, #90734ad1, #ececec);
+    height: 70px;
+    z-index: 999;
 }
 #menu {
-    float: right;
+    float: left;
     position: relative;
+    background-position: 50% 50%;
 }
 .logo {
     position: absolute;
-    top: 8px;
-    left: 30px;
+    top: 2px;
+    left: 47%;
+    cursor: pointer;
+    text-indent: 0px;
+}
+.logo img {
+    width: 111px;
+    height: 50px
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+}
+.logo img:hover {
+    width: 150px;
+    height: 67,5px;
 }
 .barPhone {
     height: 48px;
     width: 100%;
-    border-top: 2px solid #aa865550;
 }
 .phonelist {
-    margin: 0 47px 0 0;
+    margin: 0;
     text-align: center;
     display: block;
     float: right;
 }
-.phoneText {
-    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
-    font-size: 11px;
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #aa8655;
-}
-.phone {    
-    width: 120px;
-    margin-top: 10px;
-    position: relative;
-    float: left;
-}
-.H {
-    text-align: right;
-}
 .urlButton {
     float: right;
-    padding-top: 9px;
+    padding-top: 25px;
     width: 245px;
+    height: 45px;
+    border-left: 1px solid #fbddb720;
+    border-bottom: 1px solid #fbddb720;
+    border-right: 1px solid #fbddb720;
+    -moz-transition: background-color 0.8s 0.1s ease;
+    -o-transition: background-color 0.8s 0.1s ease;
+    -webkit-transition: background-color 0.8s 0.1s ease;
+}
+.urlButton:hover {
+    background-color: #f7d9b390;
 }
 .levelСontext {
-    width: 600px;
+    width: 510px;
+    height: 70px;
     float: right;
-    margin-right: 30px;
-    margin-top: 0;
+    padding-left: 0;
     margin-bottom: 0;
+    margin-top: 0;
 }
 .registrationButton {
-    padding: 6px 12px;
+    padding: 4px 10px;
     text-align: center;
-    font-family: "Open Sans",sans-serif;
-    background: linear-gradient(#90734ad1, #90734ad1);
-    border: 1px solid #a9846f;
-    border-radius: 3px;
-    color: #fff;
+    font-family: "century gothic", regular, sans-serif;
+    color: #f7d9b3;
+    font-weight: 100;
+    letter-spacing: 1px;
     cursor: pointer;
     display: inline-block;
-    letter-spacing: 1px;
-    text-shadow: 0 1px 2px rgba(0,0,0,.5);
-    font-size: 12px;
+    font-size: 13px;
     text-decoration: none;
 }
 .registrationButton:hover {
-    background: linear-gradient(#90734a80, #90734a90);
     text-decoration: none;
-    box-shadow: 1px 1px 1px grey;
-    color: #fff;
+    color: #543a21;
 }
 .context {
-    padding-top: 20px;
-    padding-left: 43px;
+    width: 100px;
+    margin-left: 0;
+    height: 43px;
+    margin-right: -5px;
+    padding-top: 26px;
+    text-align: center;
     display: inline-block;
+    border: 1px solid #fbddb720;
+    -moz-transition: background-color 0.8s 0.1s ease;
+    -o-transition: background-color 0.8s 0.1s ease;
+    -webkit-transition: background-color 0.8s 0.1s ease;
+}
+.context:hover{
+    background-color: #f7d9b390;
 }
 .contextMenu {
-    color: #ffffffbf;
+    color: #f7d9b3;
     cursor: pointer;
     font-weight: 100;
     font-family: "century gothic", sans-serif;
-    font-size: 13px;
+    text-decoration: none;
+    font-size: 12px;
     letter-spacing: 1px;
 }
+.contextSp {
+    width: 50px;
+    height: 10px;
+}
 .contextMenu:hover {
-    color: #5a3400;
+    color: #543a21;
     font-weight: 400;
     margin-top: -2px;
     text-decoration: none;
 }
 .dd1TextH {
-    height: 40px;
     font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
-    font-size: 34px;
-    text-align: center;
+    font-size: 50px;
+    width: 630px;
     color: #fff;
     margin: 0;
-    padding-top: 155px;
-    letter-spacing: 2px;
-    font-weight: 200;
-    text-shadow: 0 3px 6px #000;
-    z-index: 999;
+    letter-spacing: 1px;
+    padding-top: 220px;
+    padding-left: 30px
+    font-weight: 500;
+    text-shadow: 0 1px 1px #000;
     text-align: left;
 }
 .sep {
     border: 0;
-    width: 500px;
+    width: 620px;
     height: 1px;
     margin: 2em 0;
-    background-color: rgba(255,255,255,0.4);
+    background-color: #fff;
 }
 .dd1TextP {
-    padding-top: 12px;
+    width: 880px;
+    height: 140px;
+    margin-top: 34px;
+    background-color: #3f608a30;
 }
 .text {
     position: relative;
-    /*text-shadow: 0 1px 1px #00082f;*/
 }
 .wrapper {
     position: absolute;
     font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
     font-size: 23px;
-    width: 794px;
+    width: 815px;
+    height: 140px;
     text-align: left;
     letter-spacing: 1px;
     font-weight: 100;
     left: 40px;
+    line-height: 2;
 }
 .wave {
-  color: #ffffff;
-  font-weight: 100;
+    color: #ffffff;
+    font-weight: 100;
     text-shadow: 0 2px 4px #000;
-  -webkit-animation: 1s color infinite;
-          animation: 1s color infinite;
-}
-.wbr{
-    height: 40px;
+    -webkit-animation: 1s color infinite;
+    animation: 1s color infinite;
 }
 #toTop {
     padding:5px;
@@ -243,5 +263,46 @@ body {
     display:none;
 }
 
+/*.phone {
+    height: 50px; 
+}
+.phoneText {
+    width: 300px;
+    float: right;
+    margin-right: 47px;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 11px;
+    margin-top: 0;
+    font-weight: 100;
+    margin-bottom: 0;
+    color: #eed3b0;
+}
+
+анимация увеличения картинки!!
+.image img {
+ -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+ }
+ 
+.image img:hover{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

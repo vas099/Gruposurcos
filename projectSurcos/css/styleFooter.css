@@ -5,15 +5,9 @@
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    bottom: -150px;
-    left: 0;
-    margin: 0;
     position: relative;
-    right: 0;
-    top: 0;
     z-index: 0;
     overflow: hidden;
-    display: block;
 }
 .footerText1 {
     width: 500px;
@@ -31,12 +25,12 @@
 .footerText3 {
     height: 80px;
     overflow: hidden;
-    background-color: #90734ad1;
+    background-color: #41608c80;
 }
 .footerLogo {
     margin-top: 45px;
     position: relative;
-    border: 1px solid #fb8a3270;
+    border: 1px solid #fde0b970;
     border-radius: 5px;
     display: block;
     margin-left: auto;
@@ -70,14 +64,13 @@
     letter-spacing: 1px;
     text-align: center;
     margin-bottom: 5px;
-    color: #bf9e70;
+    color: #f7d9b3;
 }
 .textMenu {
     margin: 8px 0;
 }
 .menu_1 {
     padding: 7px 0;
-    border-bottom: 1px solid #a7553b90;
     display: block;
     color: #ffffffb8;
     font-family: "century gothic", sans-serif;

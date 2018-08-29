@@ -12,61 +12,41 @@
         <div id="global">
             <div id="header">
                 <div class="menuBar">
-                    <div class="logo">
-                        <img src="images/logo SK.png">
-                    </div>
-                    <div class="barPhone">
+                    <div class="nav">
+                        <nav id="menu">
+                            <ul class="levelСontext">
+                            <li class="context"><a class="contextMenu" href="index.html"><span class="contextSp">ГЛАВНАЯ</span></a></li>
+                            <li class="context"><a class="contextMenu" href="services.html"><span class="contextSp">УСЛУГИ</span></a></li>
+                            <li class="context"><a class="contextMenu" href="projects.html"><span class="contextSp">ПРОЕКТЫ</span></a></li>
+                            <li class="context"><a class="contextMenu" href="aboutUs.html"><span class="contextSp">О НАС</span></a></li>
+                            <li class="context"><a class="contextMenu" href="contact.html"><span class="contextSp">КОНТАКТЫ</span></a></li>
+                            </ul>
+                        </nav>
                         <div class="phonelist">
-                        <div class="phone H">
-                            <!--<p class="phoneText">Телефоны в Испании</p>-->
-                            <p class="phoneText">+34 652 288 666</p>
-                        </div>
-                        <div class="phone">
-                            <p class="phoneText">+34 675 354 594</p>
-                        </div>
-                        <div class="phone H">
-                            <!--<p class="phoneText">Телефоны в России</p>-->
-                            <p class="phoneText">+7 926 318 16 63</p>
-                        </div>
-                        <div class="phone">
-                            <p class="phoneText">+7 926 318 17 09</p>
-                        </div>
-                        <div class="urlButton">
-                            <div class="registr ation">
-                                <a class="registrationButton" href="#formGlobal"><span>ОТПРАВИТЬ ЗАЯВКУ</span></a>
+                            <div class="urlButton">
+                                <div class="registr ation">
+                                    <a class="registrationButton" href="#formGlobal"><span>Отправьте Вашу заявку</span></a>
+                                </div>
                             </div>
                         </div>
-                        </div>
+                    </div>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo SK.png"></a>
                     </div>
                 </div>
-                <div class="nav">
-                    <nav id="menu">
-                    <ul class="levelСontext">
-                        <li class="context"><a class="contextMenu" href="index.html"><span>ГЛАВНАЯ</span></a></li>
-                        <li class="context"><a class="contextMenu" href="services.html"><span>УСЛУГИ</span></a></li>
-                        <li class="context"><a class="contextMenu" href="projects.html"><span>ПРОЕКТЫ</span></a></li>
-                        <li class="context"><a class="contextMenu" href="aboutUs.html"><span>О НАС</span></a></li>
-                        <li class="context"><a class="contextMenu" href="contact.html"><span>КОНТАКТЫ</span></a></li>
-                    </ul>
-                    </nav>
+                <div class="phone">
                 </div>
             </div>
             <div id="dd1"></div>
             <div class="dd1Text">
                 <div>
-                    <p class="dd1TextH"> НЕДВИЖИМОСТЬ В ИСПАНИИ</p>
+                    <p class="dd1TextH"> Недвижимость в Испании</p>
                     <hr class="sep"/>
                 </div>
                 <div class="dd1TextP">
                     <div class="wrapper">
-                        <p class="text"> Хотите в Испании купить квартиру, построить дом или сделать ремонт? <wbr class="wbr"> Не знаете к кому обратиться для создания и реализации Вашего проекта?<wbr class="wbr"wbr> Команда профессионалов с 20-ти летним стажем поможет Вам в этом!</p>
+                        <p class="text"> Вы хотите в Испании купить квартиру, построить дом или сделать ремонт? <br class="wbr"> И не знаете к кому обратиться для создания и реализации Вашего проекта?<br class="wbr"> Команда профессионалов с 20-ти летним стажем поможет Вам в этом!</p>
                     </div>
-                    <!--<div>
-                        <p class="dd1P">Не знаете к кому обратиться для создания и реализации проекта?</p>
-                    </div>
-                    <div>
-                        <p class="dd1P">Команда профессионалов с 20-ти летним стажем поможет вам в этом!</p>
-                    </div>-->
                 </div>
             </div>
             <div id="dd2">
@@ -89,24 +69,24 @@
                         <div class="contactFormsText1">Вас интересует недвижимость в Испании?</div>
                         <div class="contactFormsText2">Отправьте нам свой запрос и мы Вам перезвоним или напишем.</div>
                     </div>
-                    <div id="contactFormsContainer">
+                    <form id="contactFormsContainer" action=" php/application.php" method="POST" name=" application ">
                         <div class="regContTotal">
                             <div class="formName">
                                 <div class="nameName">
                                     <div class="name">
-                                        <input class="inputFormName" type="text" name="firstname" placeholder="Ваше имя...">
+                                        <input class="inputFormName" type="text" name="name" placeholder="Ваше имя..." required>
                                     </div>
                                     <div class="name">
-                                        <input type="text" class="inputFormName" name="reg_email__" placeholder="Номер телефона...">
+                                        <input type="text" class="inputFormName" name="telephone" placeholder="Ваш телефон...">
                                     </div>
                                     <div class="name">
-                                        <input type="text" class="inputFormName" name="reg_email__" placeholder="Адрес электронной почты...">
+                                        <input type="email" class="inputFormName" name="email" placeholder="Адрес электронной почты..." required>
                                     </div>
                                 </div>
                             </div>
                             <div class="nameSurname">
                                 <div class="surname">
-                                    <textarea cols="40" rows="10" required form="contactFormsContainer" data-property="userMessage" aria-required="true" class="formControl" placeholder=" Введите Ваше сообшение..."></textarea>
+                                    <textarea cols="40" rows="10" name="message" class="formControl" placeholder=" Введите Ваше сообшение..."required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -119,14 +99,18 @@
                                             чтобы узнать, как мы используем файлы cookie и подобные технологии.
                                 </p>
                             </div>
+                            <input name="bezspama" type="text" style="display:none" value="" />
                             <div class="registration">
-                                <button type="submit" class="registrationButton1" name="websubmit" id="u_0_11">ОТПРАВИТЬ</button>
+                                <button type="submit" class="registrationButton1" form="contactFormsContainer">ОТПРАВИТЬ</button>
                                 <span class="reg_Button">
                                     <img class="img" src="" alt="" width="16" height="11">
                                 </span>
+                                <div id="result">
+                                    <p>Спасибо за Ваше сообщение! <br> Мы в ближайшее время Вам ответим!</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div id="footer">
@@ -204,6 +188,11 @@
     <script type="text/javascript" src="js/tooltip.js"></script>
     <script type="text/javascript" src="js/wrapper.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/logo.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/body.js"></script>
     <div id="toTop"><img src="images/up.png"></div>
     </body>
 </html> 
+
+
