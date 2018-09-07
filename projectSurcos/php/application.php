@@ -1,18 +1,19 @@
-
+<!DOCTYPE html>
+<html>
+<head>
 <meta charset="UTF-8">
 <title>Форма обратной связи</title>
 <meta http-equiv="Refresh" content="4; URL=http://localhost:8888/projectSurcos/"> 
 </head>
 <body style="background-color: #dde5f0">
 
-<?php 
+<?php
 
-$sendto   = "vas09980@gmail.com";
+$sendto   = "olegtestform@mail.ru";
 $username = $_POST['name'];
 $usertel = $_POST['telephone'];
 $usermail = $_POST['email'];
 $usermessage = $_POST['message'];
-$bezspama = htmlspecialchars($_POST["bezspama"]);
 
 $subject  = "Новое сообщение";
 $headers  = "From: " . strip_tags($usermail) . "\r\n";
@@ -30,16 +31,12 @@ $msg .= "<p><strong>Сообщение:</strong> ".$usermessage."</p>\r\n";
 $msg .= "</body></html>";
 
 
-if (empty($bezspama))
-{
-
-	if(@mail($sendto, $subject, $msg, $headers)) {
+if(mail($sendto, $subject, $msg, $headers)) {
 	echo "<center><img src='../images/spasibo.png'></center>";
-	} else {
+} else {
 	echo "<center><img src='../images/ne-otpravleno.png'></center>";
-	}
 }
-exit;
+
 ?>
 
 </body>

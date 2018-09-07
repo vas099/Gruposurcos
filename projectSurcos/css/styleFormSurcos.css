@@ -1,14 +1,13 @@
 #contactForms {
     width: 750px;
-    height: 580px;
     position: relative;
     margin: 0 auto;
     text-align: center;
     z-index: 999;
 }
 .contactFormsText {
-    height: 100px;
-    padding-top: 42px;
+    height: 50px;
+    padding-top: 20px;
 }
 .contactFormsText1 {
     text-align: center;
@@ -16,7 +15,7 @@
     font-family: "century gothic", sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
-    color: #f7d9b3;
+    color: #fff;
     font-weight: 300;
     text-shadow: 0 1px 2px #00000090;
 } 
@@ -33,16 +32,16 @@
     height: 372px;
 }
 .regContTotal {
-    height: 250px;
+    height: 185px;
 }
 .formName {
     width: 350px;
-    height: 250px;
+    height: 185px;
     float: left;
 }
 .nameSurname {
     width: 390px;
-    height: 250px;
+    height: 185px;
     float: right;
     margin-right: 5px;
 }
@@ -51,18 +50,27 @@
 }
 .inputFormName{
     width: 295px; 
-    height: 45px;
+    height: 30px;
     padding: 8px 8px;
     border-radius: 3px;
     cursor: text;
     background-color: #ffffff00;
-    border: 1px solid #ada194;
+    border: 1px solid #f7d9b3;
     font-family: Helvetica Neue Blond, Helvetica Blond, Arial Blond, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: 100;
+    color: #fff;
+}
+.inputFormName:focus {
+    border: 1px solid #00c53f;
+    color: #fff;
+}
+.formControl:focus {
+    border: 1px solid #00c53f;
     color: #fff;
 }
 input::-webkit-input-placeholder {
-  color: #ada194;
+  color: #ffeed8d1;
 }
 input:focus {
     outline: none;
@@ -74,8 +82,8 @@ input:focus {
 }
 .conditionsText {
     font-family: Helvetica Neue Blond, Helvetica , Arial Blond, sans-serif;
-    font-size: 11px;
-    color: #ffffff90;
+    font-size: 10px;
+    color: #ffffffd1;
     letter-spacing: 1px;
     font-weight: 100;
 }
@@ -112,25 +120,26 @@ input:focus {
     margin-right: 22px;
 }
 .formControl {
-    height: 208px;
+    height: 164px;
     width: 94%;
     padding: 10px;
     border-radius: 3px;
     background-color: #ffffff00;
     cursor: text;
-    border: 1px solid #ada194;
+    border: 1px solid #f7d9b3;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     color: #fff;
 }
 textarea::-webkit-input-placeholder {
-  color: #ada194;
+  color: #ffeed8d1;
 }
 textarea:focus {
     outline: none;
 }
 .inform {
-    height: 110px;
+    height: 122px;
+    padding-top: 5px;
 }
 .registration {
     zoom: 1;
@@ -142,7 +151,7 @@ textarea:focus {
     text-align: center;
     font-family: "Open Sans",sans-serif;
     background: linear-gradient( #ffffff20, #a8865740);
-    border: 1px solid #ada194;
+    border: 1px solid #f7d9b3;
     border-radius: 2px;
     color: #fff;
     cursor: pointer;
@@ -152,7 +161,7 @@ textarea:focus {
     text-decoration: none;
 }
 .registrationButton1:hover {
-    background: linear-gradient( #ffffff30, #a8865750);
+    background: linear-gradient( #ffffff50, #a8865790);
     text-decoration: none;
     box-shadow: 1px 2px 2px #00000060;
     color: #fff;
@@ -165,7 +174,7 @@ textarea:focus {
 }
 #linkForm {
     text-decoration: none;
-    font-size: 11px;
+    font-size: 10px;
     color: #dec186;
 }
 #linkForm:hover {

@@ -6,7 +6,6 @@
         <link rel="stylesheet" type="text/css" href="css/styleIndex.css">
         <link rel="stylesheet" type="text/css" href="css/styleFooter.css">
         <link rel="stylesheet" type="text/css" href="css/styleFormSurcos.css">
-        <link rel="stylesheet" type="text/css" href="css/slider.css">
     </head>
     <body>
         <div id="global">
@@ -25,7 +24,7 @@
                         <div class="phonelist">
                             <div class="urlButton">
                                 <div class="registr ation">
-                                    <a class="registrationButton" href="#formGlobal"><span>Отправьте Вашу заявку</span></a>
+                                    <a class="registrationButton" href="#global"><span>Отправьте Вашу заявку</span></a>
                                 </div>
                             </div>
                         </div>
@@ -40,79 +39,62 @@
             <div id="dd1"></div>
             <div class="dd1Text">
                 <div>
-                    <p class="dd1TextH"> Недвижимость в Испании</p>
-                    <hr class="sep"/>
+                    <p class="dd1TextH"> Ваша недвижимость в Испании</p>
                 </div>
                 <div class="dd1TextP">
                     <div class="wrapper">
-                        <p class="text"> Вы хотите в Испании купить квартиру, построить дом или сделать ремонт? <br class="wbr"> И не знаете к кому обратиться для создания и реализации Вашего проекта?<br class="wbr"> Команда профессионалов с 20-ти летним стажем поможет Вам в этом!</p>
+                        <p class="text _left"> Хотите в Испании купить квартиру, построить дом или сделать ремонт? </p> 
+                        <p class="text _right">Не знаете к кому обратиться для создания и реализации Вашего проекта?</p>
+                        <p class="text _leftBot">Команда профессионалов с 20-ти летним стажем поможет Вам в этом!</p>
                     </div>
                 </div>
-            </div>
-            <div id="dd2">
-                <div class="dd2Form">
-                    <div class="dd2Slider">
-                        <div id="slider">
-                            <div><img class="sliderImg" src="images/slider_1.jpg"></div>
-                            <div><img class="sliderImg" src="images/slider_2.jpg"></div>
-                            <div><img class="sliderImg" src="images/slider_3.jpg"></div>
-                            <div><img class="sliderImg" src="images/slider_4.jpg"></div>
-                            <div><img class="sliderImg" src="images/slider_5.jpg"></div>
-                        </div>
-                    </div>
-                    <div class="dd2SliderText"></div>
-                </div>
-            </div>
-            <div id="formGlobal">
-                <div id="contactForms">
+                <div id="formGlobal">
                     <div class="contactFormsText">
-                        <div class="contactFormsText1">Вас интересует недвижимость в Испании?</div>
-                        <div class="contactFormsText2">Отправьте нам свой запрос и мы Вам перезвоним или напишем.</div>
+                        <div class="contactFormsText1">Отправьте свой запрос и мы ответим Вам в ближайшее время</div>
                     </div>
-                    <form id="contactFormsContainer" action=" php/application.php" method="POST" name=" application ">
-                        <div class="regContTotal">
-                            <div class="formName">
-                                <div class="nameName">
-                                    <div class="name">
-                                        <input class="inputFormName" type="text" name="name" placeholder="Ваше имя..." required>
+                    <div id="contactForms">
+                        <form id="contactFormsContainer" action=" php/application.php" method="POST" name=" application ">
+                            <div class="regContTotal">
+                                <div class="formName">
+                                    <div class="nameName">
+                                        <div class="name">
+                                            <input class="inputFormName" type="text" name="name" placeholder="Ваше имя..." required autofocus>
+                                        </div>
+                                        <div class="name">
+                                            <input type="text" class="inputFormName" name="telephone" placeholder="Ваш телефон...">
+                                        </div>
+                                        <div class="name">
+                                            <input type="email" class="inputFormName" name="email" placeholder="Адрес электронной почты..." required>
+                                        </div>
                                     </div>
-                                    <div class="name">
-                                        <input type="text" class="inputFormName" name="telephone" placeholder="Ваш телефон...">
-                                    </div>
-                                    <div class="name">
-                                        <input type="email" class="inputFormName" name="email" placeholder="Адрес электронной почты..." required>
+                                </div>
+                                <div class="nameSurname">
+                                    <div class="surname">
+                                        <textarea cols="40" rows="10" name="message" class="formControl" placeholder=" Введите Ваше сообшение..."required></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <div class="nameSurname">
-                                <div class="surname">
-                                    <textarea cols="40" rows="10" name="message" class="formControl" placeholder=" Введите Ваше сообшение..."required></textarea>
+                            <div class="inform">
+                                <div class="conditions">
+                                    <p class="conditionsText">Прочитайте 
+                                        <a href="#" id="linkForm" target="_blank" rel="nofollow">Политику использования данных, </a>
+                                                   чтобы узнать, как мы получаем, используем и распространяем ваши данные, а также просмотрите 
+                                       <a href="#" id="linkForm" target="_blank" rel="nofollow">Политику в отношении файлов cookie, </a>
+                                                чтобы узнать, как мы используем файлы cookie и подобные технологии.
+                                    </p>
+                                </div>
+                                <div class="registration">
+                                    <button type="submit" class="registrationButton1" form="contactFormsContainer">ОТПРАВИТЬ</button>
+                                    <span class="reg_Button">
+                                        <img class="img" src="" alt="" width="16" height="11">
+                                    </span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="inform">
-                            <div class="conditions">
-                                <p class="conditionsText">Прочитайте 
-                                    <a href="#" id="linkForm" target="_blank" rel="nofollow">Политику использования данных, </a>
-                                               чтобы узнать, как мы получаем, используем и распространяем ваши данные, а также просмотрите 
-                                   <a href="#" id="linkForm" target="_blank" rel="nofollow">Политику в отношении файлов cookie, </a>
-                                            чтобы узнать, как мы используем файлы cookie и подобные технологии.
-                                </p>
-                            </div>
-                            <input name="bezspama" type="text" style="display:none" value="" />
-                            <div class="registration">
-                                <button type="submit" class="registrationButton1" form="contactFormsContainer">ОТПРАВИТЬ</button>
-                                <span class="reg_Button">
-                                    <img class="img" src="" alt="" width="16" height="11">
-                                </span>
-                                <div id="result">
-                                    <p>Спасибо за Ваше сообщение! <br> Мы в ближайшее время Вам ответим!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
+            <div id="dd2"></div>
             <div id="footer">
                 <div class="footerConteiner">
                     <div class="footerText1">
@@ -128,17 +110,17 @@
                                     </p>
                                     <div class="blockText">
                                         <ul class="textMenu">
-                                            <li class="menu_1"><a class="footer2Block" href="#">Архитектурно-строительное проектирование<span></span></a>
+                                            <li class="menu_1"><a class="footer2Block" href="services.html#info1">Архитектурно-строительное проектирование<span></span></a>
                                             </li>
-                                            <li class="menu_1"><a class="footer2Block" href="#">Строительство "под ключ"<span></span></a></li>
-                                            <li class="menu_1"><a class="footer2Block" href="#">Реставрация и ремонт <span></span></a></li>
+                                            <li class="menu_1"><a class="footer2Block" href="services.html#info2">Строительство жилья "под ключ"<span></span></a></li>
+                                            <li class="menu_1"><a class="footer2Block" href="services.html#info3">Продажа готовых объектов недвижимости<span></span></a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="text2Block">
                                 <div class="block">
-                                    <p class="blockH">Интересное на сайте </p>
+                                    <p class="blockH">Это Вас заинтересует </p>
                                     <div class="blockText">
                                         <ul class="textMenu">
                                             <li class="menu_1"><a class="footer2Block" href="#">Портфолио выполненных работ<span></span></a>
@@ -149,15 +131,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="text2Block">
+                            <div class="text2Block contacts">
                                 <div class="block">
-                                    <p class="blockH">Наши деловые партнеры </p>
+                                    <p class="blockH">Наши контакты </p>
                                     <div class="blockText">
                                         <ul class="textMenu">
-                                            <li class="menu_1"><a class="footer2Block" href="#">Поыпворфыповрпфыовпофырпвофырвп<span></span></a>
+                                            <li class="menu_1"><a class="footer2Block">Офис: Plaça de la Fruita 6, Elche,<br>&nbsp &nbsp &nbsp &nbsp &nbsp Alicante, Espańa</a>
                                             </li>
-                                            <li class="menu_1"><a class="footer2Block" href="#">Апорпопоырвофпвофырвпоы<span></span></a></li>
-                                            <li class="menu_1"><a class="footer2Block" href="#">Апофыпаорпыфоарпыфорапофырпа <span></span></a></li>
+                                            <li class="menu_1"><a class="footer2Block">Тефоны: +34 652 288 666 <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp +34 675 354 594</a></li>
+                                            <li class="menu_1"><a class="footer2Block"> e-mail: sk@gruposurcos.com </a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -186,7 +168,6 @@
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/up.js"></script>
     <script type="text/javascript" src="js/tooltip.js"></script>
-    <script type="text/javascript" src="js/wrapper.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/logo.js"></script>
     <script type="text/javascript" src="js/header.js"></script>
@@ -194,5 +175,8 @@
     <div id="toTop"><img src="images/up.png"></div>
     </body>
 </html> 
+
+
+
 
 

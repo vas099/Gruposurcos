@@ -22,6 +22,7 @@ function moveTip(e) {
   floatTipStyle.top = y + 20 + 'px';
 }
 
+
 function toolTip(msg) {
   floatTipStyle = document.getElementById("floatTip").style;
   if (msg) {
@@ -32,4 +33,7 @@ function toolTip(msg) {
     floatTipStyle.display = "none";
   } 
 }
+
+
+
 
