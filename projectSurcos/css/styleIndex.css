@@ -10,7 +10,7 @@ body {
     display: none;
 } 
 #global {
-    height: 2270px;
+    height: 3910px;
     margin: 0 auto;
     zoom: 1;
     display: block;
@@ -24,7 +24,10 @@ body {
     z-index: 1000;
 }
 #header.sticky {
-    background-color: #4a6997f9;
+    background-color: #3a5882;
+    opacity: 1;
+    filter: alpha(Opacity=100);
+    transition: opacity 2s ease;
 }
 #headerGl { 
     height: 70px;
@@ -34,10 +37,10 @@ body {
     z-index: 1000;
 }
 #headerGl.sticky {
-    background-color: #4a6997f9;
+    background-color: #3a5882;
 }
 #dd1 {
-    height: 950px;
+    height: 900px;
     width: 100%;
     background-image: url(../images/villa1.jpg);
     position: fixed;
@@ -51,57 +54,49 @@ body {
 #dd1.sticky {
     opacity: 0.3;
     filter: alpha(Opacity=30);
-    transition: background 0.5s ease;
+    transition: opacity 2s ease;
 }
 .dd1Text {
-    height: 950px;
+    height: 930px;
     width: 1000px;
-    position: relative;
     top: 70px;
     margin: 0 auto;
 }
 #dd2 {
-    height: 965px;
+    height: 2595px;
     position: relative;
-    background-color: #dde5f0;
+    background-color: #f2f5f8;
 }
-.dd2Container {
+#dd2Content {
+    width: 1000px;
     height: 100%;
-    width: 1400px;
     position: relative;
     margin: 0 auto;
+    background-color: #ffffffd1;
 }
-.dd2ContBlock {
+#catalog {
+    height: 135px;
     width: 100%;
-    height: 400px;
     position: relative;
-}
-.dd2Slider {
-    width: 500px;
-    height: 400px;
-    float: left;
-}
-.dd2SliderText {
-    width: 1000px;
-    height: 400px;
-    float: left;
+    margin-top: 50px;
+    background-color: #2e486fd9;
+    box-shadow: 0 4px 6px #00000080;
 }
 #formGlobal {
-    width: 770px;
-    height: 410px;
+    width: 1000px;
+    height: 160px;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
     margin: 0 auto;
+    padding-top: 11px;
     background-position: 50% 50%;
-    background-color: #41628fb5;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px #00000090;
+    background-color: #ffffff70;
 }
 #footer {
     width: 100%;
-    height: 355px;
+    height: 415px;
     margin: 0 auto;
 }
 .menuBar {
@@ -135,14 +130,6 @@ body {
     width: 150px;
     height: 67,5px;
 }
-/*    -moz-transition: all 1s linear;
-    -o-transition: all 1s linear;
-    -webkit-transition: all 1s linear;
-
-.logo img:hover {
-    width: 150px;
-    height: 67,5px;
-}*/
 .barPhone {
     height: 48px;
     width: 100%;
@@ -154,16 +141,24 @@ body {
     float: right;
 }
 .urlButton {
+    height: 70px;
+    width: 240px;
+}
+.registr {
     float: right;
-    padding-top: 25px;
-    width: 245px;
-    height: 45px;
+    padding-top: 5px;
+    width: 210px;
+    height: 30px;
+    text-align: left;
     -moz-transition: background-color 0.8s 0.1s ease;
     -o-transition: background-color 0.8s 0.1s ease;
     -webkit-transition: background-color 0.8s 0.1s ease;
 }
-.urlButton:hover {
+.registr:hover {
     background-color: #f7d9b390;
+}
+.ation {
+    border-bottom: 1px solid #f7d9b320;
 }
 .levelСontext {
     width: 510px;
@@ -231,11 +226,77 @@ body {
     margin: 0 auto;
     text-align: center;
     letter-spacing: 1px;
+    position: relative;
     text-shadow: 0 2px 6px #000;
-    padding-top: 170px;
+    padding-top: 262px;
 }
 .dd1TextP {
-    height: 140px;
+    height: 96px;
+    margin-top: 20px;
+}
+.dd2Text {
+    width: 100%;
+    position: relative;
+}
+.dd2TextH {
+    font-size: 32px;
+    padding-top: 10px;
+    margin: 0;
+    height: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: "century gothic", sans-serif;
+    background: linear-gradient(to left, #2e486fd9, #2e486fd9, #2e486fd9);
+    color: #f7d9b3;
+    font-weight: 400;
+}
+.dd2TextApartament {
+    width: 100%;
+    height: 60px;
+}
+.apartment {
+    font-family: "century gothic", sans-serif;
+    font-size: 25px;
+    color: #d88a27;
+    margin: 0 auto;
+    height: 35px;
+    font-weight: 100;
+    text-align: left;
+    background-color: #ffffffd9;
+    background: none;
+    box-shadow: none;
+    width: 865px;
+    text-shadow: 0 2px 4px #fff;
+    letter-spacing: 0;
+    vertical-align: bottom;
+    float: left;
+    padding-top: 17px;
+}
+.dd2Img {
+    height: 50px;
+    width: 80px;
+    padding: 5px;
+    float: left;
+    margin-left: 35px;
+}
+#hotPriceHome {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 10px;
+    height: 675px;
+}
+.border {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #c79f6f10, #c79f6f70, #c79f6f10);
+    border-radius: 0 0 50% 50%;
+}
+.borderBox {
+    width: 1000px;
+    height: 64px;
+    background: linear-gradient(to left, #cecece00, #cecece60, #cecece00);
+}
+._dd2 {
     margin-top: 20px;
 }
 .text {
@@ -269,7 +330,7 @@ body {
     display:none;
 }
 ._left, ._right, ._leftBot {
-    background-color: #f0f0f0d1;
+    background-color: #f0f0f090;
 }
 ._left {
     border-top-left-radius: 2px;
@@ -359,8 +420,6 @@ body {
         -webkit-transform: translateX(0%);
     }
 }
-
-
 
 
 
