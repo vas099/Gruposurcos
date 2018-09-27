@@ -1,0 +1,228 @@
+#globalContact {
+	height: auto;
+	margin: 0 auto;
+	zoom: 1;
+	display: block;
+	position: relative;
+	background-color: #f2f5f8;
+}
+.contactContainer {
+	width: 100%;
+	height: 1190px;
+	position: relative;
+}
+.cotainerForm {
+	width: 1100px;
+	height: 720px;
+	padding-top: 470px;
+	margin: 0 auto;
+}
+#cotainerImg {
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/villa.jpg);
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    background-position: 50% 50%;
+    z-index: 0;
+    opacity: 1;
+    filter: alpha(Opacity=100);
+    transition: opacity 2s ease;
+}
+#cotainerImg.sticky {
+    opacity: 0.3;
+    filter: alpha(Opacity=30);
+    transition: opacity 2s ease;
+}
+.dd1Contact {
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	background-image: url(../images/map.jpg);
+	background-position: 50% 50%;
+	opacity: 0.9;
+	filter: alpha(Opacity=90);
+	border: 0 solid #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.maps {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #ffffff90;
+	border-top-left-radius: 70px;
+	border-top-right-radius: 70px;
+}
+.mapsText {
+	width: 1100px;
+	height: 110px;
+	position: relative;
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: "century gothic", sans-serif;
+	font-size: 60px;
+	text-shadow: 1px 2px 2px #000;
+	color: #fff;
+	background-color: #2e486fd9;
+}
+.pH {
+    margin: 0;
+    padding-top: 20px;
+}
+.mapsM {
+	width: 50%;
+	height: 400px;
+	float: left;
+	position: relative;
+	margin: 0 auto;
+	text-align: right;
+	padding-right: 50px;
+	top: 120px;
+	opacity: 0.9;
+	filter: alpha(Opacity=90);
+}
+.mapsInfo {
+	width: 35%;
+	height: 400px;
+	float: left;
+	position: relative;
+	margin: 0 auto;
+	margin-left: 77px;
+	text-align: right;
+	top: 100px;
+	box-sizing: border-box;
+}
+iframe {
+	box-sizing: border-box;
+	box-shadow: 0 2px 8px #41608c;
+}
+.mapsM {
+	animation-name: mapsM;
+	-webkit-animation-name: mapsM;
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	visibility: visible !important;	
+}
+@keyframes mapsM {
+	0% {
+		transform: translateX(-150%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+@-webkit-keyframes mapsM {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+.mapsInfo{
+	animation-name: mapsInfo;
+	-webkit-animation-name: mapsInfo;	
+
+	animation-duration: 3s;	
+	-webkit-animation-duration: 3s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes mapsInfo {
+	0% {
+		transform: translateX(250%);
+	}
+			
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes mapsInfo {
+	0% {
+		-webkit-transform: translateX(250%);
+	}
+			
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+.infoContent {
+	width: 100%;
+	height: 25%;
+	box-sizing: border-box;
+	position: relative;
+	padding: 5px;
+}
+.infoContent1 {
+	width: 100%;
+	height: 50%;
+	box-sizing: border-box;	
+	position: relative;
+	padding: 5px;
+}
+.infoImage {
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	float: left;
+	vertical-align: top;
+}
+.infoText {
+	width: 250px;
+	height: 90%;
+	float: left;
+	box-sizing: border-box;
+	position: relative;
+	padding:  0 10px;
+	font-family: "century gothic", sans-serif;
+	font-size: 16px;
+	color: #41608c;
+	text-align: left;
+}
+.infoText1 {
+	width: 250px;
+	height: 90%;
+	float: left;
+	box-sizing: border-box;
+	position: relative;
+	padding: 10px;
+	font-family: "century gothic", sans-serif;
+	font-size: 16px;
+	color: #41608c;
+	text-align:left;
+	margin-top: -10px;
+	vertical-align: top;
+}
+.footerTextContact {
+	height: 80px;
+	overflow: hidden;
+	background-color: #41628f;
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
