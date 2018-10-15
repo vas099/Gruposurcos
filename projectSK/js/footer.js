@@ -1,4 +1,4 @@
-$('.blockH1').click(function() {
+/*$('.blockH1').click(function() {
     $('.menu_1').css({
         'display': 'block'
     });
@@ -15,3 +15,4 @@ $('.blockH3').click(function() {
         'display': 'block'
     });
 });
+

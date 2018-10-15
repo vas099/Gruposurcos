@@ -1,10 +1,13 @@
 #contactForms {
     width: 100%;
-    height: 160px;
+    height: 100%;
     position: relative;
     margin: 0 auto;
     text-align: center;
     z-index: 999;
+}
+#contactFormsContainer{
+    height: 100%;
 }
 .contactFormsText {
    margin-top: 30px;
@@ -12,14 +15,16 @@
    background-color: #2e486fd9;
    box-shadow: 0 4px 6px #00000080;
 }
-.contactFormsText1, .catalogTextH {
+.containerTextH {
+    height: 95px;
     text-align: center;
-    font-family: "century gothic", sans-serif;
-    font-size: 30px;
-    letter-spacing: 1px;
-    padding: 5px;
+    font-family: "Cera Pro Thin";
+    font-size: 36px;
     color: #fff;
     font-weight: 300;
+    background: #3a5882;
+    padding-top: 15px;
+    line-height: 1.1;
 } 
 .contactFormsText1 {
     font-size: 23px;
@@ -33,54 +38,53 @@
     font-weight: 100;
     padding-top: 11px;
 }
-#contactFormsContainer{
-    height: 100%;
-}
 .regContTotal {
-    height: 110px;
+    height: 200px;
+    margin-top: 15px;
 }
 .formName {
     width: 350px;
     height: 100%;
     float: left;
-    padding-left: 148px;
+    padding-left: 250px;
 }
 .nameSurname {
-    width: 350px;
-    height: 105px;
-    float: right;
+    width: 360px;
+    height: 165px;
+    float: left;
     margin-right: 126px;
-    margin-top: 8px;
+    margin-top: 20px;
 }
 .name {
-    margin-top: 8px;
+    margin-top: 20px;
 }
 .inputFormName{
     width: 295px;
-    height: 10px;
-    padding: 8px 8px;
+    height: 20px;
+    padding: 10px 8px;
     cursor: text;
     background-color: #f0f0f000;
-    border: 1px solid #fff;
+    border: 1px solid #3a5882;
     font-family: Helvetica Neue Blond, Helvetica Blond, Arial Blond, sans-serif;
     font-size: 11px;
+    color: #3a5882;
+}
+.inputFormName:focus, .formControl:focus {
+    background-color: #3a5882;
+    border: 1px solid #3a5882;
     color: #fff;
 }
-.inputFormName:focus {
-    background-color: #02773740;
-    border: 1px solid #02773740;
+.inputFormName:hover, .formControl:hover {
     color: #fff;
 }
-.formControl:focus {
-    background-color: #02773740;
-    border: 1px solid #02773740;
-    color: #fff;
-}
-input::-webkit-input-placeholder {
-  color: #fff;
-}
+input::-webkit-input-placeholder {color: #3a5882;}
+input::-moz-placeholder {color: #3a5882;}
+input:-moz-placeholder {color: #3a5882;}
+input:-ms-input-placeholder {color: #3a5882;}
+
 input:focus {
     outline: none;
+    color: #3a5882;
 }
 .nameFormName {
     display: inline;
@@ -115,50 +119,52 @@ input:focus {
     margin-right: 22px;
 }
 .formControl {
-    height: 81px;
-    width: 313px;
+    height: 142px;
+    width: 310px;
     padding: 10px;
     cursor: text;
     background-color: #f0f0f000;
-    border: 1px solid #fff;
+    border: 1px solid #395783;
     font-family: Helvetica Neue Blond, Helvetica Blond, Arial Blond, sans-serif;
     font-size: 11px;
-    color: #fff;
+    color: #3a5882;
 }
-textarea::-webkit-input-placeholder {
-  color: #fff;
-}
+textarea::-webkit-input-placeholder {color: #3a5882;}
+textarea::-moz-placeholder {color: #3a5882;}
+textarea:-moz-placeholder {color: #3a5882;}
+textarea:-ms-input-placeholder {color: #3a5882;}
+
 textarea:focus {
     outline: none;
+    color: #3a5882;
 }
 .inform {
-    height: 40px;
-    padding-top: 5px;
+    height: 65px;
 }
 .registration {
     zoom: 1;
     display: block;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 .registrationButton1 {
-    padding: 5px 30px;
     text-align: center;
-    font-family: "Open Sans",sans-serif;
-    background-color: #394769;
-    border: 1px solid #ffffff30;
-    color: #ffffff;
-    color: #fff;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #3a5882;
+    font-family: "Cera Pro Thin";
+    font-size: 24px;
+    padding: 0;
+    color: #3a5882;
+    font-weight: 600;
+    line-height: 2.5;
+    background: #ebe2d1;
     cursor: pointer;
-    display: inline-block;
-    letter-spacing: 1px;
-    font-size: 13px;
-    text-decoration: none;
 }
 .registrationButton1:hover {
-    background-color: #ffffff40;
+    background-color: #3a5882;
     text-decoration: none;
-    color: #23335dd1;
-    box-shadow: 1px 2px 2px #00000080;
+    color: #fff;
+    border: 2px solid #3a5882;
 }
 .reg_Button {
     display: none !important;
@@ -174,24 +180,15 @@ textarea:focus {
 #linkForm:hover {
     color: #fff;
 }
-/*#result {
-    width: 400px;
-    height: 50px;
-    padding-top: 10px;
-    margin: 0 auto;
-    border: 1px solid #ada194;
-    border-radius: 2px;
-    color: #fff;
-    display: none;
-    font-family: "Open Sans",sans-serif;
-    color: #fff;
-    font-size: 11px;
-    background-color: #41628ff9;
-}
-.inputFormName:focus, .formControl:focus {
-    border: 1px solid #30ad64;
-}
 
-
+@font-face {
+font-family: "Cera Pro Thin";
+src: url("../fonts/CeraPro-Thin.eot");
+src: url("../fonts/CeraPro-Thin.eot?#iefix") format("embedded-opentype"),
+url("../fonts/CeraPro-Thin.woff") format("woff"),
+url("../fonts/CeraPro-Thin.ttf") format("truetype");
+font-weight: normal;
+font-style: normal; 
+}
 
 

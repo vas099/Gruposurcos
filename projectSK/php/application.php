@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Создание формы обратной связи</title>
-<meta http-equiv="Refresh" content="4; URL=http://localhost:8888/projectSurcos/"> 
+<meta http-equiv="Refresh" content="3; URL=http://localhost:8888/projectSK/"> 
 </head>
 <body style="background-color: #dde5f0">
 
 <?php 
 
-$sendto   = "olegkvint@yandex.ru";
+$sendto   = "vas099@meta.ua";
 $username = $_POST['name'];
 $usertel = $_POST['telephone'];
 $usermail = $_POST['email'];

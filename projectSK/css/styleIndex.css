@@ -40,58 +40,39 @@ body {
     background-color: #3a5882;
 }
 #dd1 {
-    height: 900px;
-    width: 100%;
-    background-image: url(../images/villa1.jpg);
+    height: 1800px;
+    width: 3500px;
+    background-image: url(../images/villa2.jpg);
     position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
     overflow: hidden;
     display: block;
+    opacity: 0.0;
     background-position: 50% 50%;
 }
-#dd1.sticky {
+.fade.sticky {
     opacity: 0.3;
     filter: alpha(Opacity=30);
     transition: opacity 2s ease;
 }
 .dd1Text {
-    height: 930px;
+    height: 860px;
     width: 1000px;
     top: 70px;
     margin: 0 auto;
 }
 #dd2 {
-    height: 2595px;
+    height: 3200px;
     position: relative;
     background-color: #f2f5f8;
 }
-#dd2Content {
-    width: 1000px;
+#dd2Container {
+    width: 1200px;
     height: 100%;
     position: relative;
     margin: 0 auto;
-    background-color: #ffffffd1;
-}
-#catalog {
-    height: 135px;
-    width: 100%;
-    position: relative;
-    margin-top: 50px;
-    background-color: #2e486f;
-    box-shadow: 0 4px 6px #00000080;
-}
-#formGlobal {
-    width: 1000px;
-    height: 160px;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 0;
-    margin: 0 auto;
-    padding-top: 11px;
-    background-position: 50% 50%;
 }
 #footer {
     width: 100%;
@@ -144,20 +125,19 @@ body {
     width: 240px;
 }
 .registr {
-    float: right;
-    padding-top: 5px;
-    width: 210px;
-    height: 30px;
-    text-align: left;
+    width: 100%;
+    margin-left: 0;
+    height: 43px;
+    margin-right: -5px;
+    padding-top: 26px;
+    text-align: center;
+    display: inline-block;
     -moz-transition: background-color 0.8s 0.1s ease;
     -o-transition: background-color 0.8s 0.1s ease;
     -webkit-transition: background-color 0.8s 0.1s ease;
 }
 .registr:hover {
     background-color: #f7d9b390;
-}
-.ation {
-    border-bottom: 1px solid #f7d9b320;
 }
 .levelСontext {
     width: 510px;
@@ -176,7 +156,7 @@ body {
     letter-spacing: 1px;
     cursor: pointer;
     display: inline-block;
-    font-size: 13px;
+    font-size: 12px;
     text-decoration: none;
 }
 .registrationButton:hover {
@@ -191,7 +171,6 @@ body {
     padding-top: 26px;
     text-align: center;
     display: inline-block;
-    /*border: 1px solid #fbddb720;*/
     -moz-transition: background-color 0.8s 0.1s ease;
     -o-transition: background-color 0.8s 0.1s ease;
     -webkit-transition: background-color 0.8s 0.1s ease;
@@ -220,104 +199,43 @@ body {
 }
 .dd1TextH {
     font-family: "century gothic", sans-serif;
-    font-size: 50px;
+    font-size: 54px;
     color: #fff;
     margin: 0 auto;
     text-align: center;
-    letter-spacing: 1px;
     position: relative;
-    text-shadow: 0 2px 6px #000;
+    text-shadow: 0 1px 2px #000;
     padding-top: 262px;
 }
 .dd1TextP {
-    height: 96px;
-    margin-top: 20px;
-}
-.dd2Text {
-    width: 100%;
-    position: relative;
-}
-.dd2TextH {
-    font-size: 32px;
-    padding-top: 10px;
-    margin: 0;
-    height: 60px;
-    letter-spacing: 1px;
-    text-align: center;
-    font-family: "century gothic", sans-serif;
-    background: linear-gradient(to left, #2e486fd9, #2e486fd9, #2e486fd9);
-    color: #f7d9b3;
-    font-weight: 400;
-    text-decoration: none;
-}
-.dd2TextApartament {
-    width: 100%;
-    height: 60px;
-}
-.apartment {
-    font-family: "century gothic", sans-serif;
-    font-size: 25px;
-    color: #d88a27;
-    margin: 0 auto;
-    height: 35px;
-    font-weight: 100;
-    text-align: left;
-    background-color: #ffffffd9;
-    background: none;
-    box-shadow: none;
-    width: 865px;
-    text-shadow: 0 2px 4px #fff;
-    letter-spacing: 0;
-    vertical-align: bottom;
-    float: left;
-    padding-top: 17px;
-}
-.dd2Img {
-    height: 50px;
-    width: 80px;
-    padding: 5px;
-    float: left;
-    margin-left: 35px;
-}
-#hotPriceHome {
-    width: 900px;
-    margin: 0 auto;
-    padding-top: 10px;
-    height: 675px;
-}
-.dd2Slider {
-    width: 100%;
-    height:400px;
-    margin: 0 auto;
-}
-.border {
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to left, #c79f6f10, #c79f6f70, #c79f6f10);
-    border-radius: 0 0 50% 50%;
-}
-.borderBox {
-    width: 1000px;
-    height: 64px;
-    background: linear-gradient(to left, #cecece00, #cecece60, #cecece00);
-}
-._dd2 {
-    margin-top: 20px;
+    height: 500px;
+    margin-top: 80px;
 }
 .text {
     position: relative;
-    margin: 0;
+    margin: 15px auto;
+    height: 90px;
+    vertical-align: bottom ;
+}
+.text.sticky{
+    color: #3a5882;
+    text-shadow: none;
+    background-color: #00000000;
+    transition: color 2s ease;
+    transition: background-color 2s ease;
 }
 .wrapper {
-    font-family: "century gothic", sans-serif;
-    font-size: 19px;
-    width: 770px;
-    height: 138px;
-    color: #001d66;
+    font-family: "Cera Pro Thin";
+    font-size: 36px;
+/*    text-shadow: 0 2px 4px #000000;*/
+    width: 830px;
+    height: 450px;
+    color: #3a5882;
     text-align: center;
-    line-height: 1.7;
-    font-weight: 100;
+    line-height: 1.2;
+    font-weight: 1000;
     margin: 0 auto;
+    transition: color 2s ease;
 }
 .wave {
     color: #ffffff;
@@ -335,21 +253,301 @@ body {
     display:none;
 }
 ._left, ._right, ._leftBot {
-    background-color: #f0f0f099;
+    display: none;
+    padding: 15px 0;
+    background: #fff;
 }
-._left {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+.dd2ContainerText {
+    height: 200px;
+    padding-top: 60px;
 }
-._leftBot{
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+.dd2containerTextH {
+    height: 95px;
+    text-align: center;
+    font-family: "Cera Pro Regular";
+    font-size: 46px;
+    color: #fff;
+    font-weight: 300;
+    background: #3a5882;
+    line-height: 1.1;
+    padding-top: 40px;
 }
-._left {
-    animation-name: _left;
+.dd2Info{
+    width: 100%;
+    height: 400px;
+}
+.dd2InfoImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexDraw.jpg);
+}
+.dd2InfoText{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+._draw, ._home {
+    background: #3a5882;
+}
+._hous {
+    background: #eaeaea;
+}
+._app, ._rep {
+    background: #e1cdb190;
+}
+._law {
+    background: #9a8b70;
+}
+.dd2InfoAppImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexApp.jpg);
+}
+.dd2InfoHousImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexHous.jpg);
+}
+.dd2InfoImgRepImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexRem.jpg);
+}
+.dd2InfoHomeImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexHome.jpg);
+}
+.dd2InfoHomeLawImg {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/indexLaw.jpg);
+}
+.dd2ContText {
+    padding: 60px 80px;
+    width: 440px;
+    height: 280px;
+}
+.shortH, .shortP, .but {
+    width: 100%;
+    height: 30%;
+    padding-top: 20px;
+}
+.shortH_text, .shortP_text {
+   font-family: "Cera Pro Thin";
+   font-size: 38px;
+   color: #fff;
+   margin: 0;
+   padding: 0;
+   line-height: 1.1;
+}
+.shortH {
+    padding: 0;
+}
+.shortP_text {
+    font-size: 20px;
+}
+.but {
+    text-align: center;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #fff;
+    font-family: "Cera Pro Thin";
+    font-size: 24px;
+    padding: 0;
+    font-weight: 600;
+    line-height: 2.5;
+}
+.but:hover {
+    background: #fff;
+}
+.dd2_but {
+    width: 250px;
+    height: 80px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+.dd2_but:hover {
+    color: #3a5882;
+}
+._appH, ._appP, ._appB {
+    color: #3a5882;
+    font-weight: 600;
+}
+._app_a_b:hover {
+    background: #3a5882;
+}
+._appB:hover {
+    color: #fff;
+}
+._app_a_b{
+    border: 2px solid #3a5882;
+}
+#imgLeft1, #textRight1, #textLeft2, #imgRight2, #imgLeft3, #textRight3, #textLeft4, #imgRight4, #imgLeft5, #textRight5, #textLeft6, #imgRight6{
+    display: none;
+}
+#imgLeft1.sticky, #textLeft2.sticky, #imgLeft3.sticky, #textLeft4.sticky, #imgLeft5.sticky, #textLeft6.sticky {
+    animation-name: Left;
+    -webkit-animation-name: Left;
+    animation-duration: 2.5s; 
+    -webkit-animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important; 
+}
+@keyframes Left {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes Left {
+    0% {
+        -webkit-transform: translateX(-200%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+#textRight1.sticky, #imgRight2.sticky, #textRight3.sticky, #imgRight4.sticky, #textRight5.sticky, #imgRight6.sticky {
+    animation-name: Right;
+    -webkit-animation-name: Right;   
+
+    animation-duration: 2.5s; 
+    -webkit-animation-duration: 2.5s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+@keyframes Right {
+    0% {
+        transform: translateX(200%);
+    }
+            
+    100% {
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes Right {
+    0% {
+        -webkit-transform: translateX(200%);
+    }
+            
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+#formGlobal {
+    width: 1200px;
+    height: 440px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    margin: 50px auto;
+    background-position: 50% 50%;
+    background: #ebe2d1;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+font-family: "Cera Pro Thin";
+src: url("../fonts/CeraPro-Thin.eot");
+src: url("../fonts/CeraPro-Thin.eot?#iefix") format("embedded-opentype"),
+url("../fonts/CeraPro-Thin.woff") format("woff"),
+url("../fonts/CeraPro-Thin.ttf") format("truetype");
+font-weight: normal;
+font-style: normal; 
+}
+@font-face {
+font-family: "Cera Pro Medium";
+src: url("../fonts/CeraPro-Medium.eot");
+src: url("../fonts/CeraPro-Medium.eot?#iefix") format("embedded-opentype"),
+url("../fonts/CeraPro-Medium.woff") format("woff"),
+url("../fonts/CeraPro-Medium.ttf") format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Cera Pro Italic';
+src: url('../fonts/CeraPro-Italic.eot');
+src: url('../fonts/CeraPro-Italic.eot?#iefix') format('embedded-opentype'),
+url('../fonts/CeraPro-Italic.woff') format('woff'),
+url('../fonts/CeraPro-Italic.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Cera Pro Regular';
+src: url('../fonts/CeraPro-Regular.eot');
+src: url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/CeraPro-Regular.woff') format('woff'),
+url('../fonts/CeraPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+
+
+
+/*
+#catalog {
+    height: 135px;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    background-color: #2e486f;
+    box-shadow: 0 4px 6px #00000080;
+}
+#formGlobal {
+    width: 1000px;
+    height: 160px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    margin: 0 auto;
+    padding-top: 11px;
+    background-position: 50% 50%;
+}
+   animation-name: _left;
     -webkit-animation-name: _left;
-    animation-duration: 2s; 
-    -webkit-animation-duration: 2s;
+    animation-duration: 4s; 
+    -webkit-animation-duration: 4s;
     animation-timing-function: ease-in-out;
     -webkit-animation-timing-function: ease-in-out;
     visibility: visible !important; 
@@ -374,8 +572,8 @@ body {
     animation-name: right2;
     -webkit-animation-name: right2;   
 
-    animation-duration: 4s; 
-     -webkit-animation-duration: 4s;
+    animation-duration: 6s; 
+     -webkit-animation-duration: 6s;
 
      animation-timing-function: ease-in-out; 
      -webkit-animation-timing-function: ease-in-out;     
@@ -403,8 +601,8 @@ body {
 ._leftBot {
     animation-name: _leftBot;
     -webkit-animation-name: _leftBot;
-    animation-duration: 6s; 
-    -webkit-animation-duration: 6s;
+    animation-duration: 8s; 
+    -webkit-animation-duration: 8s;
     animation-timing-function: ease-in-out;
     -webkit-animation-timing-function: ease-in-out;
     visibility: visible !important; 
@@ -524,5 +722,75 @@ body {
     text-decoration: underline;
 }
 
+/*
+background: #0074f2;
+transition: background-color .2s ease-in-out;
 
-
+.dd2Text {
+    width: 100%;
+    position: relative;
+}
+.dd2TextH {
+    font-size: 32px;
+    padding-top: 10px;
+    margin: 0;
+    height: 60px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: "century gothic", sans-serif;
+    background: linear-gradient(to left, #2e486fd9, #2e486fd9, #2e486fd9);
+    color: #f7d9b3;
+    font-weight: 400;
+    text-decoration: none;
+}
+.dd2TextApartament {
+    width: 100%;
+    height: 60px;
+}
+.apartment {
+    font-family: "century gothic", sans-serif;
+    font-size: 25px;
+    color: #d88a27;
+    margin: 0 auto;
+    height: 35px;
+    font-weight: 100;
+    text-align: left;
+    background-color: #ffffffd9;
+    background: none;
+    box-shadow: none;
+    width: 865px;
+    text-shadow: 0 2px 4px #fff;
+    letter-spacing: 0;
+    vertical-align: bottom;
+    float: left;
+    padding-top: 17px;
+}
+.dd2Img {
+    height: 50px;
+    width: 80px;
+    padding: 5px;
+    float: left;
+    margin-left: 35px;
+}
+#hotPriceHome {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 10px;
+    height: 675px;
+}
+.dd2Slider {
+    width: 100%;
+    height:400px;
+    margin: 0 auto;
+}
+.border {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #c79f6f10, #c79f6f70, #c79f6f10);
+    border-radius: 0 0 50% 50%;
+}
+.borderBox {
+    width: 1000px;
+    height: 64px;
+    background: linear-gradient(to left, #cecece00, #cecece60, #cecece00);
+}

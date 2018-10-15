@@ -188,7 +188,7 @@
     background-color: #cecece;
 }
 .catalogObject, .row-fluid {
-    width: 100%;
+    width: 960px;
     height: 210px;
     padding: 7px 20px;
     border-bottom: 1px solid #cecece;
@@ -245,7 +245,7 @@
     padding-bottom: 5px;
     padding-right: 10px;
     font-family: "century gothic", sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     color: #4a6997;
 }
 .smallPage {
@@ -280,9 +280,13 @@
  -o-transform: scale(1.1);
  }
 .pageN {
-    margin: 20px 0;
-    width: 100%;
-    height: 50px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 40px;
+}
+.pegeUl {
+    text-align: center;
+    margin-top: 10px;
 }
 .pageN ul {
     padding-left: 0;
@@ -308,7 +312,7 @@
     padding: 4px 12px;
     line-height: 20px;
     font-family: Helvetica Neue Blond, Helvetica Blond, Arial Blond, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 100;
     text-decoration: none;
     background-color: #f9fafa;
@@ -321,7 +325,7 @@
     padding: 4px 12px;
     line-height: 20px;
     font-family: Helvetica Neue Blond, Helvetica Blond, Arial Blond, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 100;
     text-decoration: none;
     background-color:#43649150;
